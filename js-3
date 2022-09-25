@@ -1,0 +1,148 @@
+// Datatypes in javascript 
+// Datatypes -> Types associated with the variables 
+// Datatypes -> 1. Primitive Datatype , Value type ( which hold only value )
+// 2. Non-primitive datatypes , Refrence type ( which hold adresses ) 
+
+undefined
+// Primitive datatype 
+//1.number
+//2.string
+//3.boolean
+//4.bigint
+//5.null
+//6.undefined 
+undefined
+// Primitive datatype ( value typed which store only value )
+//1.number
+//2.string
+//3.boolean
+//4.bigint
+//5.null
+//6.undefined 
+//7.symbol
+
+undefined
+var a = 10 ;
+undefined
+typeof a ;
+'number'
+a = 6.7788989 ;
+6.7788989
+typeof a ;
+'number'
+a = 12/3 ;
+4
+typeof a ;
+'number'
+a = 10 ;
+10
+a++ ;
+10
+a;
+11
+a = Number.MAX_SAFE_INTEGER ;
+9007199254740991
+a++ ;
+9007199254740991
+a ;
+9007199254740992
+a++ ;
+9007199254740992
+a ;
+9007199254740992
+// number ( -(2 ^ 53 - 1 ) ) 
+undefined
+var name = "Ayush" ;
+undefined
+typeof name ;
+'string'
+var name = 'Ayush' ;
+undefined
+typeof name ;
+'string'
+var name = `Ayush` ;
+undefined
+typeof name ;
+'string'
+// String Interpolation 
+undefined
+var name = 'Ayush' ; 
+undefined
+var age = 19 ;
+undefined
+console.log( "My name is " + name + ". My age is " + age )  ;
+VM2664:1 My name is Ayush. My age is 19
+undefined
+// string interpolation -> process of replacing variable with its value in string form .
+undefined
+console.log( `My name is ${ name } . My age is ${ age } `  ) ;
+
+
+VM3121:1 My name is Ayush . My age is 19 
+undefined
+// concept of multiline string ;
+undefined
+var message = "My name is ayush . 
+    My age is 20 . 
+    I am a btech student ." ;
+VM3413:1 Uncaught SyntaxError: Invalid or unexpected token
+var message = "My name is ayush . My age is 20 . I am a btech student ." ;
+undefined
+console.log( message ) ;
+VM3672:1 My name is ayush . My age is 20 . I am a btech student .
+undefined
+var message = "My name is ayush \n  My age is 20 \n I am a btech student " ; 
+undefined
+console.log( message ) ;
+VM3894:1 My name is ayush 
+  My age is 20 
+ I am a btech student 
+undefined
+var message = `My name is Ayush.
+My age is 20 .`
+undefined
+console.log( message ) ;
+VM4138:1 My name is Ayush.
+My age is 20 .
+undefined
+var a = true ;
+undefined
+var b = false ;
+undefined
+type of a ; 
+VM4266:1 Uncaught SyntaxError: Unexpected identifier 'of'
+typeof a ;
+'boolean'
+var a = 1000000n ;
+undefined
+typeof a ;
+'bigint'
+var b = BigInt ( "899008978" ) ;
+undefined
+b ;
+899008978n
+var a = 1000n ;
+undefined
+var b = 10 ;
+undefined
+a + b ;
+VM4679:1 Uncaught TypeError: Cannot mix BigInt and other types, use explicit conversions
+    at <anonymous>:1:3
+(anonymous) @ VM4679:1
+var c = 2000n ;
+undefined
+a+c ;
+3000n
+//number-> numeric literal stores up to max safe limit
+undefined
+//string -> charcter or textual info
+// string interpolation
+// Multiline string
+// "" , '' , `` 
+undefined
+//boolean -> true or false 
+undefined
+//bigint -> used to store number greater then max safe limit 
+// 1. Append n to the numeric literal
+//2. Bigint() constructor 
+undefined
