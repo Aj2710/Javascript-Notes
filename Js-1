@@ -1,0 +1,65 @@
+//Javascript Introduction
+/*History
+1.javascript is build Brendon Eich ( built in10 days )  under a code name mocha .
+2.Netscape gave js brand name livescript ( script means light programming language).
+ Netscape -> Brendon Eich -> script -> mocha ( built in 10 days ) 
+3.To pentarte the market of java livescript is renamed as javascript in 1995 
+4.Javascript is the most mistaken language ( mistooken for java ) .
+5.Javascript -> java feature -> control statements -> for loop , if else ,while.
+VM2685:2 Uncaught SyntaxError: Invalid or unexpected token
+/*6.js is named officalyy as Ecma script in 1996 .
+ 7. Ecma -> European company manufacturer association */
+
+undefined
+//What is javscript ?
+/* 1. Js is weakly typed language . 
+2. Js is Dynamically typed langugae . // var a = 10 ; var a = ayush ; var a = true ; Type of a decide run time 
+3. Js is cross-platform language.
+4. Js is object oriented scripting langugae .
+5. js is high level language . // Written in pure english 
+6. js -> backend -> nodejs 
+*/
+undefined
+// Java vs Javascript 
+/* 1. js is weakly typed ans java is strictly typed language.
+2. Js dynamically typed and java is statically typed language .
+3. Js is OOsL and java is oops .
+4. js is not automatically written to hard disk and java can be .
+*/
+undefined
+// javascript is browwed from scheme , Awk , peryl , self , python.
+
+undefined
+// javscript world most popular programming language for web 
+// js is supported by most of the browser.
+// In js compiler and interpreter work is done by browser engines
+// safari -> Js loop engine 
+// Internet Explorer -> chakra 
+// Mozilla firefox -> Spidermonkey 
+// chrome and Brave -> V8 engine ( world"s fastest engine ) 
+// Brave is build by Brendon himself .
+
+undefined
+// javscript is case sensitive language . var Floor = 10 ; var floor = 20 ; Floor != floor ;
+undefined
+var floor = 10 ;
+undefined
+var Floor = 20 ;
+undefined
+Floor === floor ;
+false
+var s = 10 
+undefined
+var f = 12 ;
+undefined
+var f = 10 var r = 23 ;
+VM6405:1 Uncaught SyntaxError: Unexpected token 'var'
+var a = 19 ; var b = 20 ;
+undefined
+// -> single line comment ;
+undefined
+/* -----
+hbfdhdfbj
+jhdfkfjdjh
+*/ -> Multiline comments 
+VM6709:4 Uncaught SyntaxError: Unexpected token '>'
