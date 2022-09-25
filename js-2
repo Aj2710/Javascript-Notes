@@ -1,0 +1,29 @@
+// variables -> variables is like a container which hold anything and have a name 
+undefined
+var a = 10 ;
+undefined
+var b = 20 ;
+undefined
+var b = "Ayush" ;
+undefined
+// Identifier -> Name of variable is knowns as identifier 
+// identifier follow certains rule 
+// 1. Should always start with $ or _ or ( a-z ) or (A- Z) 
+// 2.Never start with numerical value ( 0 - 9 ) 
+undefined
+var name = "Ayush"
+undefined
+var $aa = 10 ;
+undefined
+var 9a = 20 ;
+VM1002:1 Uncaught SyntaxError: Invalid or unexpected token
+var a = 10 ;
+undefined
+typeof a ;
+'number'
+a = " Ayush "
+' Ayush '
+type of a ;
+VM1166:1 Uncaught SyntaxError: Unexpected identifier 'of'
+typeof a ;
+'string'
