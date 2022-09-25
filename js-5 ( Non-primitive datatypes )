@@ -1,0 +1,54 @@
+//Null and Undefined ;
+undefined
+var a = 10 ;
+undefined
+typeof a ;
+'number'
+var b  ;
+undefined
+//undefined -> lack of value
+undefined
+var array = [100,90,80,70,60,50] ;
+undefined
+array ;
+(6) [100, 90, 80, 70, 60, 50]
+array = null ;
+null
+array ;
+null
+//NUll -> absence of value means it may contain value later .
+undefined
+//Difference between null and undefined 
+undefined
+// null and undefined are same ? -> No they are not same 
+
+undefined
+var a ;
+undefined
+typeof undefined ;
+'undefined'
+typeof null  ;
+'object'
+var a = 10 ;
+undefined
+a + null ;
+10
+a + undefined ;
+NaN
+//difference between null and undefined 
+// Null -> absence of value and underfined-> lack of value 
+//type of null is object and type of undefined is not defined 
+//null is treated as 0 in addition with number but in case os undefined Nan error value is generated 
+undefined
+var a ;'
+VM1752:1 Uncaught SyntaxError: Invalid or unexpected token
+var a ;
+undefined
+var b ={} ;
+undefined
+b = null ;
+null
+null  == undefined ;
+true
+null === undefined ;
+false
