@@ -1,0 +1,66 @@
+//Primitive datatypes are immutable 
+undefined
+var a = 10 ;
+undefined
+var b = a ;
+undefined
+b++ ;
+10
+b ;
+11
+a ;
+10
+//Non primitive datatypes are mutable ( changable )  
+undefined
+var array = [10,20,30,66,55,45] ;
+undefined
+var array2 = array ;
+undefined
+array ;
+(6) [10, 20, 30, 66, 55, 45]
+array2 ;
+(6) [10, 20, 30, 66, 55, 45]
+array2[ 0 ] = 1000 ;
+1000
+array ;
+(6) [1000, 20, 30, 66, 55, 45]
+array2 ;
+(6) [1000, 20, 30, 66, 55, 45]
+array2 === array ;
+true
+var array3 = [...array ] // ...spread operator is used to clone array 
+undefined
+array3 ;
+(6) [1000, 20, 30, 66, 55, 45]
+array ;
+(6) [1000, 20, 30, 66, 55, 45]
+array3[0] = 999 ;
+999
+array3 ;
+(6) [999, 20, 30, 66, 55, 45]
+array ;
+(6) [1000, 20, 30, 66, 55, 45]
+array === array3 ;
+false
+//Because at this time array is get copied in to another array ;
+undefined
+// object 
+undefined
+var student = { name : "Ayush" , id : 1234 , Fees : 1900000 } ;
+undefined
+var array = [10,20,30,66,55,45] ;
+undefined
+typeof array ;
+'object'
+typeof student ;
+'object'
+array === student ;
+false
+array instanceof Array ;
+true
+student instanceof Object ;
+true
+typeof Object ;
+'function'
+// instance of operator tells us from where it is derived 
+undefined
