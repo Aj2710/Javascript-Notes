@@ -1,0 +1,50 @@
+// Object element can be acessed using . as well as [] 
+undefined
+//Difference between . and [] 
+undefined
+/* . can only be used when key is a string value while [] can be used anytime doesnt matter if it is a string , number or special character */
+undefined
+var obj = { name : "Ms Dhoni" , 50 : 122 , 100 : 60 } ; 
+undefined
+obj.name  ;
+'Ms Dhoni'
+obj['name'] ;
+'Ms Dhoni'
+obj.50 ;
+VM964:1 Uncaught SyntaxError: Unexpected number
+obj[50] ;
+122
+var a = obj[ 'name' ] ;
+undefined
+a ;
+'Ms Dhoni'
+a.toLocaleUpperCase ;
+ƒ toLocaleUpperCase() { [native code] }
+a.toUpperCase ;
+ƒ toUpperCase() { [native code] }
+a ;
+'Ms Dhoni'
+typeof a ;
+'string'
+a = "Dhoni" ; 
+'Dhoni'
+obj ;
+{50: 122, 100: 60, name: 'Ms Dhoni'}
+var a = obj[ 'name' ] ;
+undefined
+a ;
+'Ms Dhoni'
+obj['name'] = "Dhoni" ;
+'Dhoni'
+a ;
+'Ms Dhoni'
+obj[a] ;
+undefined
+var key = name ;
+undefined
+var key = "name" ;
+undefined
+obj[ key ] ;
+'Dhoni'
+obj.key ;
+undefined
