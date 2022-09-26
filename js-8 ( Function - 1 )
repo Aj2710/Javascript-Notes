@@ -1,0 +1,32 @@
+// Function in javscript ;
+undefined
+function show(){
+    console.log("Namastey javascript") ;
+}
+undefined
+show() ;
+VM258:2 Namastey javascript
+undefined
+function add(){
+    return x + y ;
+} ;
+undefined
+add( 100 , 200 ) ;
+VM418:2 Uncaught ReferenceError: x is not defined
+    at add (<anonymous>:2:5)
+    at <anonymous>:1:1
+add @ VM418:2
+(anonymous) @ VM489:1
+function add( x , y ){
+    return x + y ;
+} ;
+undefined
+add(100 , 200) ;
+300
+add( "Ayush" , 100 ) ;
+'Ayush100'
+add( "Ayush" , "jha" ) ;
+'Ayushjha'
+console.dir( add ) ;
+VM980:1 ƒ add( x , y )arguments: nullcaller: nulllength: 2name: "add"prototype: {constructor: ƒ}[[FunctionLocation]]: VM621:1[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]
+undefined
