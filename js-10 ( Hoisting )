@@ -1,0 +1,88 @@
+//Hoisting is a phenomena in javascript by which we can acess a variable and function before it is intialised.
+undefined
+console.log( a ) ;
+var a = 10 ;
+VM382:1 undefined
+undefined
+show() ;
+function show(){
+    console.log( "Namastey Javascript" ) ;
+} ;
+VM731:3 Namastey Javascript
+undefined
+function show() {
+    // var a get hoisted here 
+    console.log( a ) ;
+    if( 10 > 5 ) 
+    {
+        var a = 10 ;
+        console.log( "Namstey javscript" ) ;
+    }
+}
+undefined
+show() ;
+VM1322:3 undefined
+VM1322:7 Namstey javscript
+undefined
+window.show() ;
+VM1322:3 undefined
+VM1322:7 Namstey javscript
+undefined
+window.a ;
+10
+function show() {
+    // var a get hoisted here 
+    console.log( b ) ;
+    if( 10 > 5 ) 
+    {
+        var b = 10 ;
+        console.log( "Namstey javscript" ) ;
+    }
+} ;
+undefined
+window.b;
+undefined
+function show() {
+    // let a get hoisted here 
+    console.log( b ) ;
+    if( 10 > 5 ) 
+    {
+        let b = 10 ;
+        console.log( "Namstey javscript" ) ;
+    }
+} ;
+undefined
+window.b ;
+undefined
+function show() {
+    // let a get hoisted here 
+    console.log( c ) ;
+    if( 10 > 5 ) 
+    {
+        let c = 10 ;
+        console.log( "Namstey javscript" ) ;
+    }
+} ;
+undefined
+window.c ;
+undefined
+window.show ;
+ƒ show() {
+    // let a get hoisted here 
+    console.log( c ) ;
+    if( 10 > 5 ) 
+    {
+        let c = 10 ;
+        console.log( "Namstey javscript" ) ;
+    }
+}
+/*Hoisting is of two types variable and functional hoisting.
+2.When we run a code they are two phases scoping phase or compilation phase in which hoisting is done and interpretation phase or thread of execution 
+3.Hoisting means placing value at the top .
+4.In variable hoisting only the variable declaration part is getting hoisted not the initialization part thats why showing undefined
+5. In function hoisting the whole function is getting hoisted ( get attached with the window object ( object created when tab is creaated) )
+6. Variable hoisting is of two types functionl level and global level hoisting.
+7. In functiona level hoisting the variable get hoisted at the top of function where as in global leve; the variable get attached to the window object . */
+
+
+undefined
