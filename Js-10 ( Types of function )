@@ -1,0 +1,133 @@
+/*Types of Function in Javascript
+1.Normal Function
+2.Anonymous Functions 
+3.Named Function Expression
+4.Arrow Function 
+*/
+undefined
+//1.Normal Function 
+undefined
+function show(){
+    console.log("I am Normal Function") ;
+} ;
+undefined
+show() ;
+VM556:2 I am Normal Function
+undefined
+function add( x , y ) {
+    return x + y ;
+} ;
+undefined
+add( 10 , 20 ) ;
+30
+/*2.Anonymous Function -> The function is declared under a variable without any name and we can call the function by using () bracket with variable name . Anonymous function does'nt get hoisted the variable under which the function is declared get hoisted. it is better to use this type of function declaration to declare verb mostly used function like show() , get() , and noun the main function with Normal function type .*/  
+undefined
+var a = function() {
+    console.log( "I am Anonymous function " ) ;
+} ;
+undefined
+a() ;
+VM2297:2 I am Anonymous function 
+undefined
+typeof a ;
+'function'
+/*Named Function Expression - This function is also declared under variable the only difference this will contain the name also which help to get an idea what the function is doing . But this is rarely used .*/ ; 
+undefined
+var b = function addition( x , y ) {
+    return x + y ;
+}
+undefined
+b( 10 , 2000 ) ;
+2010
+addition( 10 , 200 ) ;
+VM3372:1 Uncaught ReferenceError: addition is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM3372:1
+b ;
+ƒ addition( x , y ) {
+    return x + y ;
+}
+function calc (  x  , y ) {
+    var add = function ( x , y ) {
+        return x + y ;
+    } ;
+    var sub = function ( x , y ) {
+        return x - y ;
+    } ;
+    return [ add , sub ] ;
+} ;
+undefined
+calc( 10 , 20 ) ;
+(2) [ƒ, ƒ]0: ƒ ( x , y )arguments: nullcaller: nulllength: 2name: "add"prototype: {constructor: ƒ}[[FunctionLocation]]: VM3812:2[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]1: ƒ ( x , y )arguments: nullcaller: nulllength: 2name: "sub"prototype: {constructor: ƒ}[[FunctionLocation]]: VM3812:5[[Prototype]]: ƒ ()[[Scopes]]: Scopes[1]length: 2[[Prototype]]: Array(0)
+var array = calc() ;
+undefined
+array ;
+(2) [ƒ, ƒ]0: ƒ ( x , y )1: ƒ ( x , y )length: 2[[Prototype]]: Array(0)
+array[0] ( 100 , 200 ) ;
+300
+array[1] ( 1000 , 500 ) ;
+500
+function calc (  x  , y ) {
+    var add = function addition ( x , y ) {
+        return x + y ;
+    } ;
+    var sub = function subtraction ( x , y ) {
+        return x - y ;
+    } ;
+    return [ add , sub ] ;
+} ;
+undefined
+var array = calc() ;
+undefined
+array ;
+(2) [ƒ, ƒ]0: ƒ addition( x , y )1: ƒ subtraction( x , y )length: 2[[Prototype]]: Array(0)
+array[0]( 100 , 200 ) ;
+300
+array[1]( 100 , 800 ) ;
+-700
+function calc (  x  , y ) {
+    var add = function  ( x , y ) {
+        return x + y ;
+    } ;
+    var sub = function  ( x , y ) {
+        return x - y ;
+    } ;
+    return { add , sub } ;
+} ;
+undefined
+var obj = calc() ;
+undefined
+obj.add( 10 , 20 ) ;
+30
+obj.sub( 20 , 10 ) ;
+10
+obj ;'
+VM4961:1 Uncaught SyntaxError: Invalid or unexpected token
+obj ; 
+{add: ƒ, sub: ƒ}
+Calc().add(10,20);
+VM4985:1 Uncaught ReferenceError: Calc is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM4985:1
+calc().add( 10 , 20 ) ;
+30
+calc().sub( 100 , 30 ) ;
+70
+//4.Arrow Function -> Arrow function is the shorter way to write a function ;
+undefined
+var a = ()=> console.log( "I am Arrow function ) ;
+VM5597:1 Uncaught SyntaxError: Invalid or unexpected token
+var a = ()=> console.log( "I am Arrow function ") ; 
+undefined
+a() ;
+VM5617:1 I am Arrow function 
+undefined
+var add = ( x , y )=> x + y ; 
+undefined
+add( 10 , 20 ) ;
+30
+var c = x => console.log( x ) ;
+undefined
+c("Ayush Kumar jha ") ;
+VM5988:1 Ayush Kumar jha 
+undefined
